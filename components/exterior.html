@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#2F4F4F]">
+    <header class="container mx-auto px-4 py-6">
+        <nav class="flex items-center justify-between">
+            <a href="/" class="text-2xl font-semibold text-white">Furni.</a>
+            
+            <ul class="hidden md:flex items-center space-x-8 text-white">
+                <li><a href="/" class="hover:text-yellow-400">Inicio</a></li>
+                <li><a href="/contact" class="hover:text-yellow-400">Nosotros</a></li>
+                <li><a href="#Services" class="hover:text-yellow-400">Servicios</a></li>
+                <li><a href="/components/contactUs.html" class="hover:text-yellow-400">Contacto</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div class="hidden md:flex items-center space-x-4 text-white">
+                <a href="/account" class="hover:text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </a>
+                <a href="/cart" class="hover:text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <a  class="group relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="LIVING" class="object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/50"></div>
+          <h2 class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white tracking-wider">
+            SILLAS
+          </h2>
+        </a>
+      
+        <a  class="group relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace" alt="DECO" class="object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/50"></div>
+          <h2 class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white tracking-wider">
+            LIVING
+          </h2>
+        </a>
+      
+        <a class="group relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200" alt="COMEDOR" class="object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/50"></div>
+          <h2 class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white tracking-wider">
+            COMEDOR
+          </h2>
+        </a>
+      </div>
+</body>
+</html>

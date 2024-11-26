@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - Furni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-[#2F4F4F]">
+        <nav class="container mx-auto px-4 py-6 flex items-center justify-between">
+            <a href="/" class="text-2xl font-semibold text-white">Furni.</a>
+            
+            <ul class="hidden md:flex items-center space-x-8 text-white">
+                <li><a href="/" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
+                <li><a href="/contact" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                <li><a href="#Services" class="hover:text-yellow-400 transition-colors">Servicios</a></li>
+                <li><a href="/components/contactUs.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
+            </ul>
+
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div class="hidden md:flex items-center space-x-4 text-white">
+                <a href="/account" class="hover:text-yellow-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </a>
+                <a href="/cart" class="hover:text-yellow-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-12">
+        <section class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                    <img id="imagenCart" src="" alt="" class="w-full h-full object-cover">
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <p id="categoriaCart" class="text-lg font-medium text-indigo-600 mb-4"></p>
+                    
+                    <h1 id="tituloCart" class="text-3xl font-bold text-gray-900 mb-4 capitalize"></h1>
+                    
+                    <div class="flex items-center mb-6">
+                        <span id="precioCart" class="text-2xl font-semibold text-gray-900 pr-6 border-r border-gray-200"></span>
+                    </div>
+
+                    <p id="descripcionCart" class="text-gray-600 mb-8"></p>
+
+                    <ul id="listaMedidas" class="space-y-4 mb-8"></ul>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <input type="number" value="1" min="1" class="w-20 text-center border-y border-gray-300 py-3">
+                        </div>
+
+                        <button id="btnAddCart" class="flex items-center justify-center gap-2 bg-indigo-600 text-white py-3 px-6 rounded-full hover:bg-indigo-700 transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7394 17.875C10.7394 18.6344 10.1062 19.25 9.32511 19.25C8.54402 19.25 7.91083 18.6344 7.91083 17.875M16.3965 17.875C16.3965 18.6344 15.7633 19.25 14.9823 19.25C14.2012 19.25 13.568 18.6344 13.568 17.875M4.1394 5.5L5.46568 12.5908C5.73339 14.0221 5.86724 14.7377 6.37649 15.1605C6.88573 15.5833 7.61377 15.5833 9.06984 15.5833H15.2379C16.6941 15.5833 17.4222 15.5833 17.9314 15.1605C18.4407 14.7376 18.5745 14.0219 18.8421 12.5906L19.3564 9.84059C19.7324 7.82973 19.9203 6.8243 19.3705 6.16215C18.8207 5.5 17.7979 5.5 15.7522 5.5H4.1394ZM4.1394 5.5L3.66797 2.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4 mt-6">
+                        <button class="p-4 rounded-full bg-indigo-50 hover:bg-indigo-100 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.47084 14.3196L13.0281 22.7501L21.9599 13.9506M13.0034 5.07888C15.4786 2.64037 19.5008 2.64037 21.976 5.07888C24.4511 7.5254 24.4511 11.4799 21.9841 13.9265M12.9956 5.07888C10.5204 2.64037 6.49824 2.64037 4.02307 5.07888C1.54789 7.51738 1.54789 11.4799 4.02307 13.9184M4.02307 13.9184L4.04407 13.939M4.02307 13.9184L4.46274 14.3115" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <button class="flex-1 bg-indigo-600 text-white py-4 px-6 rounded-full hover:bg-indigo-700 transition-colors" id="btnComprarProducto">
+                            Comprar ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../JS/productoOvierview.js" type="module"></script>
+</body>
+</html>
