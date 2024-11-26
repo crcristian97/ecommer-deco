@@ -27,7 +27,11 @@ export const productos = [
     new Producto(12, "../img/living/sillonPlanta.jpg", 150, 5, "living", "Sofá de Living","Espacioso y cómodo"),
     new Producto(13, "../img/living/sillonPlanta.jpg", 150, 5, "living", "Sofá de Living","Espacioso y cómodo"),
     new Producto(14, "../img/living/sillonPlanta.jpg", 150, 5, "living", "Sofá de Living","Espacioso y cómodo"),
-    new Producto(15, "imagen4.jpg", 200, 8, "comedor", "Mesa de Comedor", "Diseño moderno")
+    new Producto(15, "imagen4.jpg", 200, 8, "comedor", "Mesa de Comedor", "Diseño moderno"),
+    new Producto(16, "/img/dormitorio/blurry-bedroom-interior.desing.compress.webp", 300, 4, "dormitorio", "pie de cama", "Diseño moderno"),
+    new producto(17, "/img/exteriores/empty-hammock-garden.compress.webp", 200, 5, "exteriores", "Amaga Paraguaya", "Diseño moderno"),
+    new producto(18, "/img/interior/modern-wooden-chair-compress.webp", 150, 8, "interior", "silla rigida", "delux"),
+    new producto(19, "/img/oficina/still-life-office-chair-indoors-compress.webp", 500, 2, "oficina", "silla de oficina", "premium"),
 ];
 
 // Filtrar productos por categoría

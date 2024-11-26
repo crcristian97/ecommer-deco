@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Furni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-12 md:py-24">
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h1 class="text-4xl font-bold text-gray-900 mb-6">Tu Carrito de Compras</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-center border-b border-gray-200 pb-4">
+                    <i class='bx bx-shopping-bag bx-sm mr-4 text-gray-600'></i>
+                    <img src="https://via.placeholder.com/100" alt="Producto" class="w-20 h-20 object-cover mr-4 rounded-lg">
+                    <div class="flex-1">
+                        <h2 class="text-xl font-semibold text-gray-900">Producto 1</h2>
+                        <p class="text-lg text-gray-600">$29.99</p>
+                    </div>
+                    <input type="number" value="1" min="1" class="w-16 text-center border border-gray-300 py-3 mx-2">
+                    <button class="text-red-600 hover:text-red-800 transition-colors">
+                        <i class='bx bx-trash bx-sm'></i>
+                    </button>
+                </div>
+                <div class="flex items-center border-b border-gray-200 pb-4">
+                    <i class='bx bx-shopping-bag bx-sm mr-4 text-gray-600'></i>
+                    <img src="https://via.placeholder.com/100" alt="Producto" class="w-20 h-20 object-cover mr-4 rounded-lg">
+                    <div class="flex-1">
+                        <h2 class="text-xl font-semibold text-gray-900">Producto 2</h2>
+                        <p class="text-lg text-gray-600">$19.99</p>
+                    </div>
+                    <input type="number" value="1" min="1" class="w-16 text-center border border-gray-300 py-3 mx-2">
+                    <button class="text-red-600 hover:text-red-800 transition-colors">
+                        <i class='bx bx-trash bx-sm'></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mt-8">
+                <p class="text-xl font-semibold text-gray-900">Total: $49.98</p>
+                <button class="bg-yellow-400 text-black py-3 px-6 rounded-full hover:bg-yellow-300 transition-colors">
+                    <i class='bx bx-right-arrow-alt bx-sm mr-2'></i>
+                    Proceder al Pago
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
