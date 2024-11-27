@@ -73,7 +73,3 @@ window.irADetalleProducto = function(id) {
 
 // Ejecutar la función de mostrar productos cuando se carga la página
 document.addEventListener("DOMContentLoaded", mostrarProductos);
-
-
-let boton = document.getElementById('boton-carrito');
-boton.onabort
