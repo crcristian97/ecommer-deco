@@ -1,9 +1,9 @@
 class Producto {
-    constructor(id, imagen, precio, stock, categoria, titulo, subtitulo, descripcion, medidas) {
-        this.id = id;
+    constructor(id = 0, imagen = '', precio = 0, stock = 0, categoria = '', titulo = '', subtitulo = '', descripcion = '', medidas = []) {
+        this.id = Number(id);
         this.imagen = imagen;
-        this.precio = precio;
-        this.stock = stock;
+        this.precio = Number(precio);
+        this.stock = Number(stock);
         this.categoria = categoria;
         this.titulo = titulo;
         this.subtitulo = subtitulo;
@@ -73,3 +73,7 @@ window.irADetalleProducto = function(id) {
 
 // Ejecutar la función de mostrar productos cuando se carga la página
 document.addEventListener("DOMContentLoaded", mostrarProductos);
+
+
+let boton = document.getElementById('boton-carrito');
+boton.onabort
